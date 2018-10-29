@@ -16,3 +16,4 @@ Route::get('/', 'HomeController@index')->name('home');
 
 //Operator routes
 Route::get('/incident/create', 'OperatorController@incidentCreate')->name('incident.create');
+Route::get('/incident/store', 'OperatorController@incidentStore')->name('incident.store');

@@ -46,6 +46,10 @@
         } .button:hover {
             color: white;
         }
+
+        .errors {
+            color: #ea2525;
+        }
     </style>
 </head>
 <body>
