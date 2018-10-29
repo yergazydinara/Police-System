@@ -3,6 +3,12 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\OperatorUser;
+use App\PoliceUser;
+use App\AdminUser;
+use App\Incident;
+use App\User;
+use Auth;
 
 class HomeController extends Controller
 {
@@ -23,6 +29,10 @@ class HomeController extends Controller
      */
     public function index()
     {
+        if (Auth::user()->type_id == User::$OPERATOR_ID) {
+            return view('operator.index', ['incidents' => Incident::all()]);
+        }
+
         return view('home');
     }
 }

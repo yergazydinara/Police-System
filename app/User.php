@@ -28,6 +28,9 @@ class User extends Authenticatable
         'password', 'remember_token',
     ];
 
+    public static $OPERATOR_ID = 2;
+    public static $POLICE_ID = 3;
+
     public function type() {
       return $this->hasOne(UserType::class, 'id', 'type_id');
     }
