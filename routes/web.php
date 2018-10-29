@@ -13,3 +13,6 @@
 Auth::routes();
 
 Route::get('/', 'HomeController@index')->name('home');
+
+//Operator routes
+Route::get('/incident/create', 'OperatorController@incidentCreate')->name('incident.create');

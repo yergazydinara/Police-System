@@ -34,6 +34,18 @@
         tr:nth-child(even) {
             background-color: #f7f7f7;
         }
+
+        .button {
+            margin-left: 20px;
+            width: auto;
+            background: #4E9CAF;
+            padding: 10px;
+            text-align: center;
+            border-radius: 5px;
+            color: white;
+        } .button:hover {
+            color: white;
+        }
     </style>
 </head>
 <body>
