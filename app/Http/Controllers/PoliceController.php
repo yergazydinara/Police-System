@@ -29,7 +29,7 @@ class PoliceController extends Controller
 
     public function getClosestPolice(String $location)
     {
-        $allPolice = PoliceUser::all();
+        $allPolice = PoliceUser::where('status_id', PoliceUser::$STATUS_ONLINE)->get();
         $minDistance = 99;
         $closestPolice = null;
 

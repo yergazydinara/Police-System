@@ -12,6 +12,9 @@ class PoliceUser extends Model
         'location',
     ];
 
+    public static $STATUS_ONLINE = 2;
+    public static $STATUS_OFFLINE = 1;
+
     public function user() {
       return $this->belongsTo(User::class, 'user_id', 'id');
     }
